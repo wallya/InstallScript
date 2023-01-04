@@ -1,4 +1,4 @@
-# [Odoo](https://www.odoo.com "Odoo's Homepage") Install Script
+# [ERP](https://www.citcot.com "citcot's Homepage") Install Script
 
 This script is based on the install script from André Schenkels (https://github.com/aschenkels-ictstudio/openerp-install-scripts)
 but goes a bit further and has been improved. This script will also give you the ability to define an xmlrpc_port in the .conf file that is generated under /etc/
