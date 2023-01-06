@@ -258,7 +258,7 @@ sudo mv ~/$OE_CONFIG /etc/init.d/$OE_CONFIG
 sudo chmod 755 /etc/init.d/$OE_CONFIG
 sudo chown root: /etc/init.d/$OE_CONFIG
 
-echo -e "* Start ODOO on Startup"
+echo -e "* Start ERP on Startup"
 sudo update-rc.d $OE_CONFIG defaults
 
 #--------------------------------------------------
