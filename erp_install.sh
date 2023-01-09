@@ -78,7 +78,7 @@ echo -e "\n--- Installing Python 3 + pip3 --"
 sudo apt-get install git python3 python3-pip build-essential wget python3-dev python3-venv python3-wheel libxslt-dev libzip-dev libldap2-dev libsasl2-dev python3-setuptools node-less libpng12-0 libjpeg-dev gdebi -y
 
 echo -e "\n---- Install python packages/requirements ----"
-sudo -H pip3 install -r https://github.com/zergawICSP/ERP-15/raw/${OE_VERSION}/requirements.txt
+sudo -H pip3 install -r https://github.com/wallya/citcoterp/raw/${OE_VERSION}/requirements.txt
 
 echo -e "\n---- Installing nodeJS NPM and rtlcss for LTR support ----"
 sudo apt-get install nodejs npm -y
@@ -116,7 +116,7 @@ sudo chown $OE_USER:$OE_USER /var/log/$OE_USER
 # Install ERP
 #--------------------------------------------------
 echo -e "\n==== Installing ERP Server ===="
-sudo git clone --depth 1 --branch $OE_VERSION https://www.github.com/wallya/citcot $OE_HOME_EXT/
+sudo git clone --depth 1 --branch $OE_VERSION https://www.github.com/wallya/citcoterp $OE_HOME_EXT/
 
 if [ $IS_ENTERPRISE = "True" ]; then
     # Odoo Enterprise install!
