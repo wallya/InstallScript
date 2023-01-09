@@ -15,7 +15,7 @@
 # ./odoo-install
 ################################################################################
 
-OE_USER="odoo"
+OE_USER="erp"
 OE_HOME="/$OE_USER"
 OE_HOME_EXT="/$OE_USER/${OE_USER}-server"
 # The default port where this Odoo instance will run under (provided you use the command -c in the terminal)
@@ -25,7 +25,7 @@ INSTALL_WKHTMLTOPDF="True"
 OE_PORT="8069"
 # Choose the Odoo version which you want to install. For example: 13.0, 12.0, 11.0 or saas-18. When using 'master' the master version will be installed.
 # IMPORTANT! This script contains extra libraries that are specifically needed for Odoo 13.0
-OE_VERSION="14.0"
+OE_VERSION="15.0"
 # Set this to True if you want to install the Odoo enterprise version!
 IS_ENTERPRISE="False"
 # Set this to True if you want to install Nginx!
