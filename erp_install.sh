@@ -268,7 +268,7 @@ sudo update-rc.d $OE_CONFIG defaults
 if [ $INSTALL_NGINX = "True" ]; then
   echo -e "\n---- Installing and setting up Nginx ----"
   sudo apt install nginx -y
-  cat <<EOF > ~/odoo
+  cat <<EOF > ~/erp
 server {
   listen 80;
 
@@ -343,7 +343,7 @@ server {
 }
 EOF
 
-  sudo mv ~/odoo /etc/nginx/sites-available/$WEBSITE_NAME
+  sudo mv ~/erp /etc/nginx/sites-available/$WEBSITE_NAME
   sudo ln -s /etc/nginx/sites-available/$WEBSITE_NAME /etc/nginx/sites-enabled/$WEBSITE_NAME
   sudo rm /etc/nginx/sites-enabled/default
   sudo service nginx reload
